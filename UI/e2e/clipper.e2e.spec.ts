@@ -237,11 +237,11 @@ test.describe('CLIPPER E2E — full pipeline with B-roll', () => {
     });
   });
 
-  test('full CLIPPER pipeline with B-roll and SHORTGENERATOR branding', async ({ page }) => {
+  test('full CLIPPER pipeline with B-roll and SADSHA SHORTS branding', async ({ page }) => {
     test.setTimeout(300_000);
     // 1. Branding & routing
     await page.goto('/clipper');
-    await expect(page.locator('header').first()).toContainText('SHORTGENERATOR');
+    await expect(page.locator('header').first()).toContainText('SADSHA SHORTS');
     await expect(page.locator('header')).not.toContainText('CLIPPER');
 
     // 2. Full-width layout — header and main should be w-full, not constrained
@@ -388,7 +388,7 @@ test.describe('CLIPPER E2E — full pipeline with B-roll', () => {
     await themeBtn.click();
     await expect(page.locator('html')).not.toHaveClass(/dark/);
 
-    // 14. Verify ShortsGenerator generator route still works (full generation from scratch)
+    // 14. Verify SadSha Shorts Generator generator route still works (full generation from scratch)
     await page.goto('/generate');
     await expect(page.getByText('Generate').first()).toBeVisible();
     await expect(page).toHaveURL(/\/generate/);

@@ -1,4 +1,4 @@
-# HOW-TO-USE-AI — ShortsGenerator for AI Assistants
+# HOW-TO-USE-AI — SadSha Shorts Generator for AI Assistants
 
 > Read this first when dropped into this repo. Companion docs: `onBoard.md`
 > (system map), `README.md` (features/endpoints), `.env.example` (all env vars).
@@ -15,7 +15,7 @@ Supertonic TTS, faster-whisper, Qwen3-TTS (torch/CUDA).
 
 ```bash
 conda env create -f environment.yml   # one-time: Python 3.11 + ffmpeg + pip deps
-conda activate shortsgenerator        # EVERY new shell — the backend refuses
+conda activate sadsha-shorts-generator        # EVERY new shell — the backend refuses
                                       # to start on any other interpreter
 cp .env.example .env                  # then fill PEXELS_API_KEY, TIKTOK_SESSION_ID, IMAGEMAGICK_BINARY
 ```
@@ -41,7 +41,7 @@ Rules:
 ```bash
 # Terminal 1 — backend (CWD must be Backend/ for relative asset paths)
 cd Backend && python main.py          # Flask on :8080
-# or: conda run -n shortsgenerator python Backend/main.py   (from repo root)
+# or: conda run -n sadsha-shorts-generator python Backend/main.py   (from repo root)
 
 # Terminal 2 — frontend
 cd UI && npm install && npm run dev   # Nuxt on :3000 (reads ../.env)
@@ -78,7 +78,7 @@ Run standalone (env activated — `conda run` swallows stdin, so it cannot be
 used for stdio transports; call the env python directly or activate first):
 
 ```bash
-conda activate shortsgenerator
+conda activate sadsha-shorts-generator
 python -m Backend.mcp.clipper_mcp
 ```
 
@@ -95,14 +95,14 @@ Register in an MCP client (adapt absolute paths). opencode `opencode.json`:
   "mcp": {
     "clipper": {
       "type": "local",
-      "command": ["/home/leamsigc/miniconda3/envs/shortsgenerator/bin/python", "-m", "Backend.mcp.clipper_mcp"],
+      "command": ["~/miniconda3/envs/sadsha-shorts-generator/bin/python", "-m", "Backend.mcp.clipper_mcp"],
       "enabled": true
     }
   }
 }
 ```
 
-Claude Code: `claude mcp add clipper -- /home/leamsigc/miniconda3/envs/shortsgenerator/bin/python -m Backend.mcp.clipper_mcp`
+Claude Code: `claude mcp add clipper -- ~/miniconda3/envs/sadsha-shorts-generator/bin/python -m Backend.mcp.clipper_mcp`
 (run from the repo root, or add `--cwd /path/to/ShortsGenerator`).
 
 Typical flow: `create_project` → `process_project` → `get_clips` →

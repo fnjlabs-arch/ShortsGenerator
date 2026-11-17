@@ -25,12 +25,12 @@ const createNew = () => {
       <button
         class="flex items-center gap-2.5 bg-transparent border-0 cursor-pointer"
         @click="goHome"
-        aria-label="SHORTGENERATOR home"
+        aria-label="SADSHA SHORTS home"
       >
         <span class="w-6 h-6 rounded-[4px] bg-clipper-green flex items-center justify-center text-clipper-ink text-[13px] font-bold leading-none">
           ▶
         </span>
-        <span class="font-bold text-clipper-ink dark:text-white text-[17px] tracking-tight">SHORTGENERATOR</span>
+        <span class="font-bold text-clipper-ink dark:text-white text-[17px] tracking-tight">SADSHA SHORTS</span>
       </button>
 
       <span class="w-px h-6 bg-clipper-ink/10 dark:bg-neutral-700" />

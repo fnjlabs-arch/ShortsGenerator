@@ -32,7 +32,7 @@ const isActive = (path: string) => {
         <!-- Brand -->
         <NuxtLink to="/generate" class="flex items-center gap-2.5 shrink-0">
           <span class="w-6 h-6 rounded-[4px] bg-clipper-green flex items-center justify-center text-clipper-ink text-[13px] font-bold leading-none">▶</span>
-          <span class="font-bold text-clipper-ink dark:text-white text-[17px] tracking-tight">SHORTGENERATOR</span>
+          <span class="font-bold text-clipper-ink dark:text-white text-[17px] tracking-tight">SADSHA SHORTS</span>
         </NuxtLink>
 
         <span class="w-px h-6 bg-clipper-ink/10 dark:bg-white/10 hidden sm:block" />

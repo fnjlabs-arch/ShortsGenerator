@@ -10,11 +10,11 @@ from datetime import datetime
 # just the recommended one.
 if sys.version_info[:2] != (3, 11):
     print(f"ERROR: Backend requires Python 3.11, you are on {sys.version.split()[0]} "
-          f"({sys.executable}). Activate the env first: conda activate shortsgenerator")
+          f"({sys.executable}). Activate the env first: conda activate sadsha-shorts-generator")
     sys.exit(1)
-if "shortsgenerator" not in sys.prefix and ".venv" not in sys.prefix:
+if "sadsha-shorts-generator" not in sys.prefix and ".venv" not in sys.prefix:
     print(f"WARNING: unexpected interpreter {sys.executable}. "
-          f"Use `conda activate shortsgenerator` (or the repo .venv) to avoid broken native deps.")
+          f"Use `conda activate sadsha-shorts-generator` (or the repo .venv) to avoid broken native deps.")
 from utils import *
 from dotenv import load_dotenv
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
-# ShortsGenerator backend manager.
+# SadSha Shorts Generator backend manager.
 #
-# Always runs `python ./Backend/main.py` inside the `shortsgenerator` conda
+# Always runs `python ./Backend/main.py` inside the `sadsha-shorts-generator` conda
 # env, from the repo root, no matter which shell/env you launched it from.
 #
 set -euo pipefail
@@ -10,7 +10,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-ENV_NAME="shortsgenerator"
+ENV_NAME="sadsha-shorts-generator"
 PORT="${API_PORT:-8080}"
 LOG_FILE="$SCRIPT_DIR/backend.log"
 REQ_FILE="$SCRIPT_DIR/requirements.txt"
@@ -25,7 +25,7 @@ cmd_help() {
   cat <<EOF
 Usage: ./system.sh <command> [options]
 
-Runs the ShortsGenerator backend (Flask, port ${PORT}) inside the
+Runs the SadSha Shorts Generator backend (Flask, port ${PORT}) inside the
 '${ENV_NAME}' conda env. With no command, this help is shown.
 
 Commands:
@@ -173,7 +173,7 @@ ensure_env() {
     conda env create -f "$ENV_FILE"
   fi
 
-  # Activate the env exactly like `conda activate shortsgenerator` would.
+  # Activate the env exactly like `conda activate sadsha-shorts-generator` would.
   conda activate "$ENV_NAME"
   PYTHON="$(command -v python)"
   note "Python: $PYTHON"

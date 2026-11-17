@@ -1,4 +1,4 @@
-# Script Templates — extracted from the ShortsGenerator Backend
+# Script Templates — extracted from the SadSha Shorts Generator Backend
 
 Source of truth: `Backend/settings.py` (`scriptTemplates`, `scriptSettings`)
 and `Backend/classes/Shorts.py` (`GenerateScript`, `SCRIPT_LENGTHS`).

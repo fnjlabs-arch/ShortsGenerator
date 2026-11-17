@@ -1,5 +1,6 @@
 services:
   api:
+    image: ghcr.io/fnjlabs-arch/sadsha-shorts-generator:latest
     build:
       context: .
       dockerfile: Dockerfile

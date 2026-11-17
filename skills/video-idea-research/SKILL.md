@@ -13,7 +13,7 @@ description: |
   YouTube metadata block (title, description, tags, keywords) for each idea.
   Final output: video-ideas.json (canonical) + ideas-report.md + REPORT.html
   ranking the top 10 videos and the 5 fully-scripted ideas.
-  Script templates are extracted from the ShortsGenerator Backend
+  Script templates are extracted from the SadSha Shorts Generator Backend
   (Backend/settings.py scriptTemplates) and hook/title craft from public
   Claude skill repos (see references/hook-library.md).
   Load this skill whenever a platform research skill enters "video ideas"

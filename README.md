@@ -1,4 +1,4 @@
-# ShortsGenerator
+# SadSha Shorts Generator
 
 ![ShortGenerator](/logo.jpeg)
 
@@ -30,8 +30,8 @@ Automate YouTube Shorts creation locally — script generation, stock video sear
 ## Local usage:
 
 ```bash
-git clone https://github.com/leamsigc/ShortsGenerator.git
-cd ShortsGenerator
+git clone https://github.com/fnjlabs-arch/ShortsGenerator.git
+cd SadSha Shorts Generator
 cp .env.example .env
 #Start the backend
 python Backend/main.py
@@ -46,8 +46,8 @@ cd UI && pnpm i && npx  nuxt dev --tunnel #Tunnel to add the connection to uploa
 ## Quick Start (Docker)
 
 ```bash
-git clone https://github.com/leamsigc/ShortsGenerator.git
-cd ShortsGenerator
+git clone https://github.com/fnjlabs-arch/ShortsGenerator.git
+cd SadSha Shorts Generator
 cp .env.example .env
 # Edit .env — at minimum set PEXELS_API_KEY and IMAGEMAGICK_BINARY
 docker compose up -d
@@ -60,7 +60,7 @@ Open **http://localhost:5000** or **http://localhost:3000** for the frontend.
 ### Backend (Python Flask on :8080)
 
 ```bash
-conda activate shortsgenerator   # required: Python 3.11 env (see onBoard.md).
+conda activate sadsha-shorts-generator   # required: Python 3.11 env (see onBoard.md).
                                  # main.py exits immediately on any other version.
 pip install -r requirements.lock # pre-resolved; plain requirements.txt can stall pip's resolver
 cp .env.example .env
@@ -175,7 +175,7 @@ UI/
 ## Notes
 
 - **Python 3.11 only.** The backend exits on startup with any other version
-  (`conda activate shortsgenerator` first, in the same terminal). Running it
+  (`conda activate sadsha-shorts-generator` first, in the same terminal). Running it
   under `base` (3.10) fails with cryptic native-lib errors (e.g. torchaudio
   `.so` load failures) — never install project packages into `base`.
 - **Install via the lockfile.** `pip install -r requirements.lock` instead of

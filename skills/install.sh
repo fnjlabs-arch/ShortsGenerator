@@ -1,6 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# Install ShortsGenerator research skills to Claude global skills
+# Install SadSha Shorts Generator research skills to Claude global skills
 # (Opencode also reads ~/.claude/skills, so this covers both)
 # Usage: ./skills/install.sh [--link|--copy] [--global DIR]
 #   --link  : symlink (default)
@@ -27,7 +27,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 SKILLS_SRC="$SCRIPT_DIR"
 
-echo "Installing ShortsGenerator skills -> $GLOBAL_DIR (mode: $MODE)"
+echo "Installing SadSha Shorts Generator skills -> $GLOBAL_DIR (mode: $MODE)"
 mkdir -p "$GLOBAL_DIR"
 
 # Skills to install (research families + their states)

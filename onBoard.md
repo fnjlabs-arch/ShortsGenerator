@@ -1,4 +1,4 @@
-# ShortsGenerator — LLM Onboard
+# SadSha Shorts Generator — LLM Onboard
 
 YouTube Shorts video generation system. Backend: Python Flask (port 8080). Frontend: Nuxt 3 SPA (port 3000).
 
@@ -14,7 +14,7 @@ Do **not** install into `base` — conflicting versions in base cause runtime er
 conda env create -f environment.yml
 
 # 2. Activate it
-conda activate shortsgenerator
+conda activate sadsha-shorts-generator
 
 # 3. Configure and run
 cp .env.example .env
@@ -26,17 +26,17 @@ cd UI && npm install && npm run dev     # Nuxt on :3000
 Useful commands:
 
 ```bash
-conda activate shortsgenerator          # switch into the env (do this in every new shell)
+conda activate sadsha-shorts-generator          # switch into the env (do this in every new shell)
 conda env update -f environment.yml --prune   # re-sync after requirements.txt changes
-conda env remove -n shortsgenerator           # delete and recreate if broken
-conda run -n shortsgenerator python Backend/main.py   # run without activating
+conda env remove -n sadsha-shorts-generator           # delete and recreate if broken
+conda run -n sadsha-shorts-generator python Backend/main.py   # run without activating
 ```
 
 > `pip install -r requirements.txt` resolves versions from scratch and pip's
 > backtracker can stall on it (`resolution-too-deep`). Prefer the pre-resolved
 > lockfile instead — same packages, instant resolution:
 > ```bash
-> conda activate shortsgenerator
+> conda activate sadsha-shorts-generator
 > pip install -r requirements.lock
 > ```
 > After changing pins in `requirements.txt`, regenerate the lock:
@@ -46,7 +46,7 @@ conda run -n shortsgenerator python Backend/main.py   # run without activating
 Verify the env is healthy:
 
 ```bash
-conda activate shortsgenerator
+conda activate sadsha-shorts-generator
 python -c "import moviepy, PIL, flask, faster_whisper, ctranslate2; print('env OK')"
 ```
 

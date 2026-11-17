@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-ShortsGenerator Installation Script
+SadSha Shorts Generator Installation Script
 
-Installs all dependencies needed for the ShortsGenerator project:
+Installs all dependencies needed for the SadSha Shorts Generator project:
 - System dependencies (ffmpeg, ImageMagick, espeak-ng)
 - Python packages from requirements.txt
 - KittenTTS for local TTS
@@ -190,7 +190,7 @@ IMAGEMAGICK_BINARY=/usr/bin/convert
 def main():
     print("""
 ╔═══════════════════════════════════════════════════════════════╗
-║              ShortsGenerator Installation Script              ║
+║              SadSha Shorts Generator Installation Script              ║
 ╚═══════════════════════════════════════════════════════════════╝
 """)
     
@@ -225,7 +225,7 @@ Next steps:
 2. Run: cd Backend && python main.py
 3. Open http://localhost:8080 to verify the API is working
 
-For help, see: https://github.com/leamsigc/ShortsGenerator
+For help, see: https://github.com/fnjlabs-arch/ShortsGenerator
 """)
 
 

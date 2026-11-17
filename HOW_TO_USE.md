@@ -1,4 +1,4 @@
-# ShortsGenerator — How to Use
+# SadSha Shorts Generator — How to Use
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@
 
 ```bash
 # 1. Clone and enter the project
-cd ShortsGenerator
+cd SadSha Shorts Generator
 
 # 2. Install Python dependencies
 pip install -r requirements.txt

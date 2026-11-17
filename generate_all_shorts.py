@@ -9,7 +9,7 @@ import subprocess
 import sys
 import time
 
-BASE_DIR = "/home/leamsigc/Documents/learn/ShortsGenerator"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # repo root
 POSTS_DIR = os.path.join(BASE_DIR, ".reddit-research/2026-07-07_093517")
 INSTAGRAM_DIR = os.path.join(BASE_DIR, "Backend/static/generated_videos/instagram")
 API_URL = "http://localhost:8080/api/search-and-download"

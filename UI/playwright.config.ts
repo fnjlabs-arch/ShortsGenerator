@@ -27,7 +27,7 @@ export default defineConfig({
       url: 'http://localhost:3000',
       reuseExistingServer: !process.env.CI,
       timeout: 120_000,
-      cwd: '/home/leamsigc/Documents/learn/ShortsGenerator/UI',
+      cwd: './',
       env: { ...process.env, NUXT_PORT: '3000' },
     },
     {
@@ -35,7 +35,7 @@ export default defineConfig({
       url: 'http://localhost:8080/api/clipper/projects',
       reuseExistingServer: !process.env.CI,
       timeout: 30_000,
-      cwd: '/home/leamsigc/Documents/learn/ShortsGenerator/Backend',
+      cwd: '../Backend',
     },
   ],
 });
